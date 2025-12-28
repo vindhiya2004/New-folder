@@ -1,0 +1,61 @@
+body {
+font-family: Arial;
+margin: 0;
+background: #f6fff2;
+}
+
+header {
+background: #2e7d32;
+color: white;
+padding: 15px;
+text-align: center;
+}
+
+nav {
+background: #4caf50;
+padding: 10px;
+text-align: center;
+}
+
+nav a {
+color: white;
+margin: 15px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.hero {
+padding: 40px;
+text-align: center;
+}
+
+.wa-btn, .cart-btn {
+  display: block !important;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.products {
+text-align: center;
+}
+
+.product-box {
+display: inline-block;
+background: white;
+width: 220px;
+margin: 15px;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 0 10px #ccc;
+}
+
+.product-box img {
+width: 100%;
+border-radius: 10px;
+}
+
+.product-img {
+width: 300px;
+display: block;
+margin: auto;
+}
