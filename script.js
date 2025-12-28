@@ -133,7 +133,7 @@ function proceedToPayment() {
   }
 
   let upiURL =
-    "upi://pay?pa=ravineena0@oksbi&pn=HerbalStore&am=" +
+    "upi://pay?pa=srm.rpt@okhdfcbank&pn=HerbalStore&am=" +
     total +
     "&cu=INR";
 
@@ -141,3 +141,24 @@ function proceedToPayment() {
 }
 
 window.onload = displayCart;
+function loadCart() {
+  let cartItemsDiv = document.getElementById("cartItems");
+  let total = 0;
+
+  cartItemsDiv.innerHTML = "";
+
+  cart.forEach(item => {
+    cartItemsDiv.innerHTML += <p>${item.name} - ₹${item.price}</p>;
+    total += item.price;
+  });
+
+  // Shipping charge
+  let shipping = 40;
+  total += shipping;
+
+  document.getElementById("totalAmount").innerText = total;
+}
+
+if (document.getElementById("cartItems")) {
+  loadCart();
+}
